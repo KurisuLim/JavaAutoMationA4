@@ -10,16 +10,16 @@ public class WhileLoops {
          *
          * initialization comparison condition(Expression) update
          */
-        Random rand = new Random();
-        int n = rand.nextInt(10);
-        guessMyNumber(n);
+
+        guessMyNumber();
     }
 
-    public static void guessMyNumber(int n) {
-
+    public static void guessMyNumber() {
+        Random rand = new Random();
+        int n = rand.nextInt(10);
         Scanner scanner = new Scanner(System.in);
         String guess = scanner.nextLine();
-
+        System.out.println(" ");
         while (!guess.equals(Integer.toString(n))) {
             System.out.println("Give me a number from 0-10");
             guess = scanner.nextLine();
