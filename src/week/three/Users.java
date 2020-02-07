@@ -7,5 +7,7 @@ public class Users {
         user.lastName = "Lim";
         user.jobTitle = "Lead QA Engineer";
         user.email = "chris.lim@testpro.io";
+
+        user.profile();
     }
 }
