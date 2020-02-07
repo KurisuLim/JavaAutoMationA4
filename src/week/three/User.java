@@ -2,9 +2,9 @@ package week.three;
 
 public class User {
 
-    String firstName;
-    String lastName;
-    String jobTitle;
-    String email;
-    int id;
+    public String firstName;
+    public String lastName;
+    public String jobTitle;
+    public String email;
+    private int id;
 }
