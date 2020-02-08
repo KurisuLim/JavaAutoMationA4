@@ -1,15 +1,28 @@
 package week.three;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Users {
     public static void main(String[] args ){
-        User user = new User();
-        user.firstName = "Chris";
-        user.lastName = "Lim";
-        user.jobTitle = "Lead QA Engineer";
-        user.email = "chris.lim@testpro.io";
+        Student apprentice = new Student();
+        apprentice.major = "QA Automation";
+        apprentice.firstName = "Chris";
+        apprentice.lastName = "Lim";
+        apprentice.jobTitle = "QA Engineer";
+        apprentice.email ="lim@testpro.io";
 
-        String message = user.profile();
 
-        System.out.println(message);
+        Teacher instructor = new Teacher();
+        instructor.firstName = "Marianne";
+        instructor.lastName = "Lim";
+
+        List<User> people = new ArrayList<User>();
+        people.add(apprentice);
+        people.add(instructor);
+
+        for(User info : people ){
+            info.profile();
+        }
     }
 }
