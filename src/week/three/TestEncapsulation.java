@@ -1,4 +1,4 @@
-package week.two;
+package week.three;
 
 public class TestEncapsulation {
     public static void main(String[] args){

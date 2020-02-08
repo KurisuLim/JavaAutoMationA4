@@ -1,4 +1,4 @@
-package week.two;
+package week.three;
 
 public class Encapsulate {
     // private variable declared
