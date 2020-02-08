@@ -8,6 +8,8 @@ public class Users {
         user.jobTitle = "Lead QA Engineer";
         user.email = "chris.lim@testpro.io";
 
-        user.profile();
+        String message = user.profile();
+
+        System.out.println(message);
     }
 }

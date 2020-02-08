@@ -8,11 +8,10 @@ public class User {
     public String email;
     private int id;
 
-    public void profile(){
-        System.out.println(
-                firstName + " " + lastName + "\n" +
+    public String profile(){
+        return firstName + " " + lastName + "\n" +
                         jobTitle + "\n" +
-                        email
-        );
+                        email;
     }
+
 }
