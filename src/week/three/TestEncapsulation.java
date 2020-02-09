@@ -5,7 +5,9 @@ public class TestEncapsulation {
 
         users("Chris Lim", 33, true);
         System.out.println("");
-        users("Mariane", 34, false);
+        users("Marianne", 34, false);
+        System.out.println("");
+        customGetter("Cj", 2, false);
 
     }
 
@@ -28,5 +30,15 @@ public class TestEncapsulation {
         * For example:
         * System.out.printLn("Hi! " + dataObj.name);
         * */
+    }
+
+    public static void customGetter(String name, int age, boolean student) {
+
+        Encapsulate object = new Encapsulate();
+        object.setName(name);
+        object.setAge(age);
+        object.setStudent(student);
+
+        System.out.println(object.fullInfo());
     }
 }

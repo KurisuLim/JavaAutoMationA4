@@ -8,6 +8,13 @@ public class Encapsulate {
     private int age;
     private boolean student;
 
+    //Custom Getter and Setter
+    public String fullInfo(){
+        return "Name: " + getName() + "\n" +
+               "Age: " + String.valueOf(getAge()) + "\n" +
+               "Student: " + String.valueOf(getStudent());
+    }
+
     // get method for name to access
     // private variable name
     public String getName(){
@@ -29,7 +36,7 @@ public class Encapsulate {
     // set method for name to access
     // private variable name
     public void setName(String newName){
-        name = newName;
+        name = newName.strip();
     }
 
     // set method for age to access
