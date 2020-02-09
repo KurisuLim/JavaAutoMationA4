@@ -1,5 +1,7 @@
 package week.three;
 
+import java.util.List;
+
 public class Encapsulate {
     // private variable declared
     // these can only be accessed by
@@ -53,6 +55,12 @@ public class Encapsulate {
 
     public static void staticPrintUser(Encapsulate u){
         System.out.println("\n"+ u.getFullInfo());
+    }
+
+    public static void printUserList(List<Encapsulate> users){
+        for(Encapsulate list : users){
+            System.out.println("\n"+ list.getFullInfo());
+        }
     }
 
 }

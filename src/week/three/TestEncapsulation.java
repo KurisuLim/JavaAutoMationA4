@@ -23,11 +23,14 @@ public class TestEncapsulation {
         user.setStudent(false);
         Encapsulate.staticPrintUser(user);
 
-        //Creating Default Constructor
+        // creating Default Constructor
         Teacher instructor = new Teacher();
 
-      // Creating a Custom Constructor
+        // Creating a Custom Constructor
         Teacher guru = new Teacher("Aj", "Gonzalez", "Designer");
+
+        // Array list custom type
+        userList();
 
 
     }
@@ -129,5 +132,19 @@ public class TestEncapsulation {
 
     public void printUser(Encapsulate u){
         System.out.println("\n"+ u.getFullInfo());
+    }
+
+    public static void userList(){
+        String[] name = {"Goku", "Vegita", "Gohan", "Piccolo"};
+
+        List<Encapsulate> dragonBallZ = new ArrayList<Encapsulate>();
+
+        for(int i = 0; i < name.length; i++){
+            Encapsulate zFighters = new Encapsulate();
+            zFighters.setName(name[i]);
+            dragonBallZ.add(zFighters);
+        }
+
+        Encapsulate.printUserList(dragonBallZ);
     }
 }
