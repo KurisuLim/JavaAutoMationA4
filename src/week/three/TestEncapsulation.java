@@ -13,6 +13,8 @@ public class TestEncapsulation {
         System.out.println("");
         customGetter("Cj", 2, false);
         arrayCustomType();
+        System.out.println("");
+        customTypeLoop();
 
     }
 
@@ -45,7 +47,7 @@ public class TestEncapsulation {
         object.setAge(age);
         object.setStudent(student);
 
-        System.out.println(object.fullInfo());
+        System.out.println(object.getFullInfo());
     }
 
     public static void arrayCustomType(){
@@ -83,5 +85,26 @@ public class TestEncapsulation {
             System.out.println(Arrays.toString(people.toArray()));
         }
 
+    }
+
+    public static void customTypeLoop(){
+        String[] name = {"Dean", "Sam", "Castiel", "Jack"};
+        int[] age = {40,35,1000,1};
+        boolean[] student = { false, false, false, true};
+
+        List<Encapsulate> hunters = new ArrayList<Encapsulate>();
+
+        // loop that adds the people in the list
+        for(int i = 0; i < name.length; i++){
+            Encapsulate winchesters = new Encapsulate();
+            winchesters.setName(name[i]);
+            winchesters.setAge((age[i]));
+            winchesters.setStudent(student[i]);
+            hunters.add(winchesters);
+        }
+        // for each
+        for(Encapsulate winchesters : hunters){
+            System.out.println(winchesters.getFullInfo());
+        }
     }
 }

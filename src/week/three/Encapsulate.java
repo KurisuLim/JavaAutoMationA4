@@ -9,7 +9,7 @@ public class Encapsulate {
     private boolean student;
 
     //Custom Getter and Setter
-    public String fullInfo(){
+    public String getFullInfo(){
         return "Name: " + getName() + "\n" +
                "Age: " + String.valueOf(getAge()) + "\n" +
                "Student: " + String.valueOf(getStudent());
