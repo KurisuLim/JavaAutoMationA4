@@ -1,5 +1,9 @@
 package week.three;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TestEncapsulation {
     public static void main(String[] args){
 
@@ -8,6 +12,7 @@ public class TestEncapsulation {
         users("Marianne", 34, false);
         System.out.println("");
         customGetter("Cj", 2, false);
+        arrayCustomType();
 
     }
 
@@ -35,10 +40,48 @@ public class TestEncapsulation {
     public static void customGetter(String name, int age, boolean student) {
 
         Encapsulate object = new Encapsulate();
+
         object.setName(name);
         object.setAge(age);
         object.setStudent(student);
 
         System.out.println(object.fullInfo());
+    }
+
+    public static void arrayCustomType(){
+        Encapsulate person1 = new Encapsulate();
+        person1.setName("Person One");
+        person1.setAge(21);
+        person1.setStudent(true);
+
+        Encapsulate person2 = new Encapsulate();
+        person2.setName("Person Two");
+        person2.setAge(22);
+        person2.setStudent(true);
+
+        Encapsulate person3 = new Encapsulate();
+        person3.setName("Person Three");
+        person3.setAge(23);
+        person3.setStudent(true);
+
+        Encapsulate instructor = new Encapsulate();
+        instructor.setName("Instructor");
+        instructor.setAge(43);
+        instructor.setStudent(false);
+
+        List<Encapsulate> people = new ArrayList<Encapsulate>();
+        people.add(person1);
+        people.add(person2);
+        people.add(person3);
+        people.add(instructor);
+
+        int length = people.size();
+
+        System.out.println("");
+
+        for(int i=0; i < length; i++ ){
+            System.out.println(Arrays.toString(people.toArray()));
+        }
+
     }
 }
