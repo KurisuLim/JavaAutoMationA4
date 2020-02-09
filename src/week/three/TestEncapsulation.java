@@ -106,5 +106,13 @@ public class TestEncapsulation {
         for(Encapsulate winchesters : hunters){
             System.out.println(winchesters.getFullInfo());
         }
+
+        // taking custom types as arguments
+        TestEncapsulation encapsulate =  new TestEncapsulation();
+        encapsulate.printUser(hunters.get(0));
+    }
+
+    public void printUser(Encapsulate u){
+        System.out.println("\n"+ u.getFullInfo());
     }
 }
