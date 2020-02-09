@@ -16,6 +16,20 @@ public class TestEncapsulation {
         System.out.println("");
         customTypeLoop();
 
+        // static method example
+        Encapsulate user = new Encapsulate();
+        user.setName("Zero Sugar");
+        user.setAge(47);
+        user.setStudent(false);
+        Encapsulate.staticPrintUser(user);
+
+        //Creating Default Constructor
+        Teacher instructor = new Teacher();
+
+      // Creating a Custom Constructor
+        Teacher guru = new Teacher("Aj", "Gonzalez", "Designer");
+
+
     }
 
     public static void users(String name, int age, boolean student) {
@@ -110,6 +124,7 @@ public class TestEncapsulation {
         // taking custom types as arguments
         TestEncapsulation encapsulate =  new TestEncapsulation();
         encapsulate.printUser(hunters.get(0));
+
     }
 
     public void printUser(Encapsulate u){

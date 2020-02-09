@@ -51,4 +51,8 @@ public class Encapsulate {
          student = newStudent;
     }
 
+    public static void staticPrintUser(Encapsulate u){
+        System.out.println("\n"+ u.getFullInfo());
+    }
+
 }
