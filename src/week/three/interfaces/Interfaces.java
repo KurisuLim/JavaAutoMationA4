@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Interfaces {
 
-    public static void main(String[] arrgs){
+    public static void main(String[] args){
         // creating an instance of a warrior
         Warrior warriorD = new Warrior();
         warriorD.hitPoints(20);
