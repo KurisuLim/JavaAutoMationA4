@@ -40,6 +40,12 @@ public class Users {
         System.out.println(Members.searchList(users,"Chris", "Lim"));
         System.out.println(Members.searchList(users,"Marianne", "Lim"));
         System.out.println(Members.searchList(users,"Cj", "Lim"));
+
+        //Override to String
+        System.out.println(me.toString());
+
+        // Override equals
+        System.out.println(me.equals(you));
     }
 
 }

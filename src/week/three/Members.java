@@ -1,5 +1,6 @@
 package week.three;
 import java.util.List;
+import java.util.Objects;
 
 public class Members {
 
@@ -38,5 +39,25 @@ public class Members {
             }
         }
         return "User does not exist!";
+    }
+
+    // overrides the toString method
+    @Override
+    public String toString(){
+        return "User [getFullName()=" + getFullName() + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Members)) return false;
+        Members members = (Members) o;
+        return Objects.equals(firstName, members.firstName) &&
+                Objects.equals(lastName, members.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
     }
 }
