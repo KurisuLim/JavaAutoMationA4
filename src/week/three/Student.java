@@ -11,4 +11,12 @@ public class Student extends User {
                 jobTitle + "\n" +
                 email + "\n");
     }
+
+    public void sayHello(){
+
+        //super keyword to access the user class method
+        super.sayHello();
+        System.out.println("This is the Student version!");
+    }
+
 }

@@ -10,5 +10,9 @@ public abstract class User {
     public boolean verified = false;
 
     public abstract void profile();
+    public  void sayHello(){
+        System.out.println("User version");
+    };
+
 
 }

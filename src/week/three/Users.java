@@ -57,6 +57,11 @@ public class Users {
 
         Members found = Members.findUser(users,search);
         System.out.println(found);
+
+        // invoking parent class methods with super keyword
+        Student s = new Student();
+        s.sayHello();
+
     }
 
 }
