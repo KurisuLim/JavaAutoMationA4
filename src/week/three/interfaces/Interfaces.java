@@ -25,5 +25,31 @@ public class Interfaces {
         Actions action = Actions.ATTACK;
         System.out.println("\nWarrior Class just " + action + " a monster.");
 
+        //enum in a switch statement
+        Actions movement = Actions.OPEN;
+
+        switch(movement){
+            case ATTACK:
+                System.out.println("Attack");
+                break;
+            case DEFEND:
+                System.out.println("Defend");
+                break;
+            case WALK:
+                System.out.println("Walk");
+                break;
+            case PICKUP:
+                System.out.println("Pickup");
+                break;
+            case OPEN:
+                System.out.println("Open");
+                break;
+            case EQUIP:
+                System.out.println("Equip");
+                break;
+            case USE:
+                System.out.println("Use");
+                break;
+        }
     }
 }
