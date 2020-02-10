@@ -17,6 +17,16 @@ public class Encapsulate {
                "Student: " + String.valueOf(getStudent());
     }
 
+    public String getFullInfo(boolean student){
+        if(student == true){
+            return "\nWelcome to my class Student " + getName() + "!";
+        }
+        else
+        {
+            return "\nGood morning! Instructor " +  getName() + "!";
+        }
+    }
+
     // get method for name to access
     // private variable name
     public String getName(){

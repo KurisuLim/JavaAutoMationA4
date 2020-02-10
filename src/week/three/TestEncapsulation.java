@@ -32,6 +32,9 @@ public class TestEncapsulation {
         // Array list custom type
         userList();
 
+        // working with method overloads
+        customGetter("John Cena", false);
+        customGetter("Kevin Owen", true);
 
     }
 
@@ -65,6 +68,17 @@ public class TestEncapsulation {
         object.setStudent(student);
 
         System.out.println(object.getFullInfo());
+    }
+    // method overloads
+    public static void customGetter(String name, boolean student) {
+
+        Encapsulate object = new Encapsulate();
+
+        object.setName(name);
+        object.setStudent(student);
+
+        // working overload
+        System.out.println(object.getFullInfo(student));
     }
 
     public static void arrayCustomType(){
