@@ -28,6 +28,18 @@ public class Members {
         lastName = lName.strip();
     }
 
+    public static Members findUser(List<Members> users, Members name){
+        for(Members element : users){
+            if(element.equals(name)){
+                return element;
+            }
+        }
+        return null;
+    }
+    public static String searchList(List<Members> users, Members obj){
+        return searchList(users, obj.getFullName());
+    }
+
     public static String searchList(List<Members> users, String firstName, String lastName){
         return searchList(users, firstName + " "+ lastName);
     }

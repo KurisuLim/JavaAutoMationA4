@@ -46,6 +46,17 @@ public class Users {
 
         // Override equals
         System.out.println(me.equals(you));
+
+        // overload the search to take in a user object
+        System.out.println(Members.searchList(users, you));
+
+        //returning custom objects
+        Members search = new Members();
+        search.setFirstName("Not");
+        search.setLastName("Me");
+
+        Members found = Members.findUser(users,search);
+        System.out.println(found);
     }
 
 }
