@@ -24,5 +24,22 @@ public class Users {
         for(User info : people ){
             info.profile();
         }
+
+        Members me = new Members();
+        me.setFirstName("Chris");
+        me.setLastName("Lim");
+
+        Members you = new Members();
+        you.setFirstName("Marianne");
+        you.setLastName("Lim");
+
+        List<Members> users = new ArrayList<Members>();
+        users.add(me);
+        users.add(you);
+
+        System.out.println(Members.searchList(users,"Chris", "Lim"));
+        System.out.println(Members.searchList(users,"Marianne", "Lim"));
+        System.out.println(Members.searchList(users,"Cj", "Lim"));
     }
+
 }
