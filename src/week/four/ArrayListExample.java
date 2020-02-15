@@ -9,6 +9,7 @@ public class ArrayListExample {
     public static void main(String[] args){
         String[] names = {"Chris", "Marianne", "CJ", "Arianne"};
 
+        //List is also refers as ArrayList
         List<String> users = new ArrayList<String>();
 
         for (int i = 0; i < names.length; i++){
